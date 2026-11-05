@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+   int arr[] = {23, 12, 45, 20, 90, 89, 95, 32, 65, 19};
+   int n = sizeof(arr) / sizeof(arr[0]);
+   int max = arr[0]; // Initialize max with the first element
+   for (int i = 1; i < n; i++) {
+       if (arr[i] > max) {
+           max = arr[i]; // Update max if a larger value is found
+       }
+   }
+   printf("The highest number in the array is: %d\n", max);
+   return 0;
+}
